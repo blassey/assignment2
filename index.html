@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Jungle Adventure</title>
+    <link href="adventure.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div id="container">
+        <h1>Jungle Adventure</h1>
+        <div id="messageImage"><img src="images/leopard.jpg" alt="leopard" />
+        </div>
+        <div id="messageSide">
+            <div id="messageText">
+                <p class="begining">While on a jungle safari, you come across a leopard blocking your path. What do you do? (RUN, FEED, or CLIMB TREE)</p>
+                <p class="fast">Are you fast?</p>
+                <p class="rested">Are you well rested?</p>
+                <p class="run-success">Glad you got enough rest. Now run like the wind! See he&rsquo;s too tired to keep up.</p>
+                <p class="run-fail">You have to be fast and well rested to out run this leopard. You are dinner!</p>
+                <p class="food">What kind of food do you have?</p>
+                <p class="feed-success">Ok, feed the leopard quickly. Ah look, he is sleeping off his meal. Let&rsquo;s get out of here!</p>
+                <p class="feed-fail">Leopards aren&rsquo;t vegetarians. You are what&rsquo;s for dinner.</p>
+                <p class="climb-fail">Um, leopards climb trees. You are dinner.</p> 
+            </div>
+            <div id="buttonArea">
+                <button id="btn-begining-run" class="begining"><img src="images/choice-run.jpg" alt="run" />
+                </button>
+                <button id="btn-begining-feed" class="begining"><img src="images/choice-feed.jpg" alt="feed" />
+                </button>
+                <button id="btn-begining-climb" class="begining"><img src="images/choice-climb.jpg" alt="climb" />
+                </button>
+                <button id="btn-fast-yes" class="fast"><img src="images/choice-fast-yes.jpg" alt="fast yes" />
+                </button>
+                <button id="btn-fast-no" class="fast"><img src="images/choice-fast-no.jpg" alt="fast no" />
+                </button>
+                <button id="btn-rested-yes" class="rested"><img src="images/choice-rested-yes.jpg" alt="rested yes" />
+                </button>
+                <button id="btn-rested-no" class="rested"><img src="images/choice-rested-no.jpg" alt="rested no" />
+                </button>
+                <button id="btn-food-meat" class="food"><img src="images/choice-feed-meat.jpg" alt="meat" />
+                </button>
+                <button id="btn-food-fish" class="food"><img src="images/choice-feed-fish.jpg" alt="fish" />
+                </button>
+                <button id="btn-food-vegetables" class="food"><img src="images/choice-feed-vegetables.jpg" alt="vegetables" />
+                </button>
+                <button id="play-again" class="play-again">Play again?</button>
+            </div>
+        </div>
+        <div class="clearAll"></div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="adventure.js"></script>
+</body>
+</html>
